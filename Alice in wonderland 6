@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int num;
+    scanf("%d",&num);
+    int tens=num/10;
+    int units=num%10;
+    int sum=tens+units;
+    printf("Bird said:%d\n",num);
+    printf("Alice must go in path-%d\n",sum);
+    return 0;
+}
