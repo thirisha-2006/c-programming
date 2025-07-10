@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int x1,y1,x2,y2;
+    scanf("%d %d %d %d",&x1,&y1,&x2,&y2);
+    float midp,midl;
+    midp=(x1+x2)/2.0;
+    midl=(y1+y2)/2.0;
+    printf("Binoy's house is located at (%.1f,%.1f)",midp,midl);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
