@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+char name[50];
+    int arrear,cpga;
+    scanf("%s",name);
+    scanf("%d",&arrear);
+    scanf("%d",&cpga);
+    if(arrear==1&&cpga>70||(arrear==1||arrear==2)&&cpga>75)
+    {
+        printf("Name of the Student:%s\n",name);
+        printf("%s is Eligible for Placement\n",name);
+    }
+    else{
+        printf("Name of the Student:%s\n",name);
+        printf("%s is Not Eligible for Placement",name);
+    }
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
