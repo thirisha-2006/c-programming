@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+float litre,distance;
+    float litresper100km,miles,gallons,mpg;
+    scanf("%f",&litre);
+    scanf("%f",&distance);
+    if(litre<=0||distance<=0){
+        printf("Invalid Input");
+        return 0;
+    }
+    litresper100km=(litre/distance)*100;
+    miles=distance*0.6214;
+    gallons=litre*0.2642;
+    mpg=miles/gallons;
+    printf("Liters/100KM\n%.2f\n",litresper100km);
+    printf("Miles/gallons\n%.2f\n",mpg);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
