@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int pizza,puffs,coldrinks;
+    int  pizzaprice,puffsprice,coldrinksprice;
+    scanf("%d",&pizza);
+    scanf("%d",&puffs);
+    scanf("%d",&coldrinks);
+    scanf("%d",&pizzaprice);
+    scanf("%d",&puffsprice);
+    scanf("%d",&coldrinksprice);
+    int totpizza=pizza*100;
+    int totpuffs=puffs*20;
+    int totcoldrinks=coldrinks*10;
+    int totalprice=(totpizza+totpuffs+totcoldrinks);
+    printf("Bill Details\n");
+    printf("No of pizzas:%d\n",pizza);
+    printf("No of puffs:%d\n",puffs);
+    printf("No of cooldrinks:%d\n",coldrinks);
+    printf("Total price=%d\n",totalprice);
+    printf("ENJOY THE SHOW!!!");
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
