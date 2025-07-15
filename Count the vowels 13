@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+    int countvowels(char word[]){
+    int count = 0;
+        for(int i = 0;word[i] != '\0';i++){
+            char ch = tolower(word[i]);
+            if(ch =='a' || ch =='e' || ch =='i' || ch =='o' || ch =='u'){
+                count++;
+            }
+        }
+        return count;
+    }
+int main(){
+    char word[100];
+    scanf("%s",word);
+    int vowels=countvowels(word);
+    printf("count: %d\n",vowels);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
