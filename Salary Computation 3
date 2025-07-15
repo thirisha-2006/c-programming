@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+double calculateGrossSalary(int basic){
+    double hra,da;
+    if(basic<15000){
+        hra=0.15*basic;
+        da=0.90*basic;
+    }else{
+        hra=5000;
+        da=0.98*basic;
+    }
+    return basic+hra+da;
+}
+{
+        int basic;
+        double gross;
+        scanf("%d",&basic);
+        gross=calculateGrossSalary(basic);
+        printf("%.2f\n",gross);
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
